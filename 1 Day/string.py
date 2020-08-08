@@ -1,25 +1,28 @@
 x = "maninder"
 y = "mike"
-z = "this is a string line \n and it is a small line"
+z = "this is a string line and it is a small line"
 
 
-print(x.capitalize())
-print(x.casefold())
+print("first word capitalize: ", x.capitalize())
+print("lowercase: ", x.casefold())
 
-print(x.center(20))
-print(x.center(20, "-"))
+print("center", x.center(20))
+print("center with value: ", x.center(20, "-"))
 
-print(z.count("is"))
+print("count value in str: ", z.count("is"))
 
 # print(x.encode())
 
-print(x.endswith("r"))
+print("value ends with: ", x.endswith("r"))
 print(z.endswith("line"))
 
-# print(z.expandtabs(2))
+txt = "this is \t tab"
+
+print("expande tabs: ", txt.expandtabs())
 print(z.find("is"))
 
-print("{}{}".format(x, y))
+
+print("format values: ", "{} {}".format(x, y))
 
 # print(x.format_map())
 
@@ -34,37 +37,38 @@ print("123456".isalpha())
 print(x.isascii())
 print("123456".isascii())
 
-h = 3
+deci = '\u0030'  # 0
+num = '005'
+print("decimal: ", deci.isdecimal())
+print("digit: ", num.isdigit())
 
-# print(x.isdecimal())
-# print(h.isdecimal())
-# print(h.isdigit())
+print("string or not: ", x.isidentifier())
 
-# print(x.isidentifier())
+print("is value lower case", z.islower())
 
-print(z.islower())
-# print(h.isnumeric())
-print(z.isprintable())
+print("value only countains numbers: ", num.isnumeric())
 
-# print(x.isspace())
+print("value not use \\n \\t: ", z.isprintable())
 
-# print(z.istitle())
+spc = "   "
+print("all white space: ", spc.isspace())
 
-print(z.capitalize())
+print("if line start with uppercase: ", z.istitle())
 
-print("".join(z))
+print("join values in one line: ", "".join(z))
 
-print(x.ljust(20, '-'))
-print(z.lower())
+print("add str after value: ", x.ljust(20, '-'))
+print("lowercase all sts: ", z.lower())
 
-print(z.lstrip('this'))
-# print(z.l)
+print("strip from giving value: ", z.lstrip('this'))
 
-# print(z.maketrans())
+maktr = "Hello, Sam"
+mktable = maktr.maketrans('S', 'P')
+print("maketrans: ", maktr.translate(mktable))
 
-print(z.partition('this'))
+print("partition with specified location: ", z.partition('this'))
 
-print(z.replace('this', 'Not'))
+print("replace value: ", z.replace('this', 'Not'))
 
 print(z.rfind('is'))
 
@@ -72,14 +76,14 @@ print(z.rindex('is'))
 
 print(x.rjust(20, '-'))
 
-print(z.rpartition('\n'))
+print("partition: ", z.rpartition('is'))
 
 print(z.rsplit('is'))
 
 
 space = "      spaceBetween        "
 
-# print(space.rstrip())
+print("rstrip: ", space.rstrip())
 
 print(z.split())
 
@@ -87,11 +91,13 @@ print(z.splitlines())
 
 print(z.startswith("this"))
 
-print(space.strip())
+print('strip: ', space.strip())
 
-print(z.title())
+print("first word uppercase: ", z.title())
 
-# print(z.translate())
+mydict = {12: 123}
+dtext = "Hello mike"
+print("translate: ", dtext.translate(mydict))
 
-print(z.upper())
-print(x.zfill(20))
+print("uppercase: ", z.upper())
+print("fill zero in front: ", x.zfill(20))
