@@ -1,6 +1,6 @@
-def func(x):
-    return x + 1
 
 
-def test_answer():
-    assert func(3) == 3
+def test_string():
+    assert 'Mike'.capitalize() == 'Mike'
+    assert 'mike'.center(10) == '   mike   '
+    assert 'Mike'.endswith("e") != 'e'
