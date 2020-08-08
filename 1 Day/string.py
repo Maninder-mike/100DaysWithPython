@@ -1,6 +1,6 @@
 x = "maninder"
 y = "mike"
-z = "this is a string line /n and it is a small line"
+z = "this is a string line \n and it is a small line"
 
 
 print(x.capitalize())
@@ -57,4 +57,41 @@ print("".join(z))
 print(x.ljust(20, '-'))
 print(z.lower())
 
-print(z.lstrip('is'))
+print(z.lstrip('this'))
+# print(z.l)
+
+# print(z.maketrans())
+
+print(z.partition('this'))
+
+print(z.replace('this', 'Not'))
+
+print(z.rfind('is'))
+
+print(z.rindex('is'))
+
+print(x.rjust(20, '-'))
+
+print(z.rpartition('\n'))
+
+print(z.rsplit('is'))
+
+
+space = "      spaceBetween        "
+
+# print(space.rstrip())
+
+print(z.split())
+
+print(z.splitlines())
+
+print(z.startswith("this"))
+
+print(space.strip())
+
+print(z.title())
+
+# print(z.translate())
+
+print(z.upper())
+print(x.zfill(20))
