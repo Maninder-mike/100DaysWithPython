@@ -1,7 +1,8 @@
 x = {"key1": "value1", "key2": "value2"}
 z = dict(one=1, two=2, three=3)
 
-nested = {'data': {'name':"maninder",'age':25,'hobbies':['coding','writting','learning','bookworm']}}
+nested = {'data': {'name': "maninder", 'age': 25, 'hobbies': [
+    'coding', 'writting', 'learning', 'bookworm']}}
 
 # print(z.items())
 # print(z.keys())
@@ -31,5 +32,3 @@ nested = {'data': {'name':"maninder",'age':25,'hobbies':['coding','writting','le
 
 
 # print("clear: ", x.clear())
-
-
