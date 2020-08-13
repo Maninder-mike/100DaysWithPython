@@ -8,4 +8,4 @@ def test_tuple():
     assert tup.index('time') == 2
     assert tup.index(5) != 2
 
-    assert tup.index(5) <= 10 
+    assert tup.index(5) <= 10
