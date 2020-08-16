@@ -1,4 +1,4 @@
-from Algorithms.check_time import run_algorithm
+from algorithms.check_time import run_algorithm
 
 
 def insertion_sort(num):
