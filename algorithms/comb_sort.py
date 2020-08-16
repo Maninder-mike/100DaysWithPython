@@ -1,5 +1,3 @@
-from Algorithms.check_time import run_algorithm
-
 
 # TODO "This code is not working yet."
 

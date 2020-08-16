@@ -24,4 +24,5 @@ def dfs_paths(g, start, goal):
             else:
                 stack.append((i, path + [i]))
 
+
 print(list(dfs_paths(graph_1, 'A', 'F')))
