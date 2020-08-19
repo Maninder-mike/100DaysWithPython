@@ -28,6 +28,11 @@ four = [x*x for x in range(10)]
 
 five = [x**x for x in range(10)]
 
+six = [x ** 2 for x in range(1, 11)]
+
+seven = [x**2 for x in [x**2 for x in range(1, 11)]]
+print(seven)
+
 # Using lambda function inside list
 list_lambda = list(map(lambda x: x, 'hello'))
 
@@ -55,6 +60,8 @@ list_matrix = [[row[i] for row in matrix] for i in range(2)]
 theline = 'this is a line for test.'
 vowels = [x for x in theline if x in 'aeiou']
 
+celsius = [0, 10, 20.5, 35.6, 48.6]
+fahrenheit = [((9/5)*temp+32) for temp in celsius]
 
 # Dictionary Comprehensions
 
