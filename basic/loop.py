@@ -77,11 +77,23 @@ x = 0
 
 # ----------------------------------------------
 
+# while x < 10:
+#     print('x is currently: ', x)
+#     x += 1
+#     if x == 5:
+#         break
+#     else:
+#         continue
 
-while x < 10:
-    print('x is currently: ', x)
-    x += 1
-    if x == 5:
-        break
-    else:
-        continue
+# ----------------------------------------------
+
+# while True:
+#     print('Break, when greater than 10.')
+#     iput = float(input('Guess your number: '))
+#     if iput >= 10:
+#         print('loop breaked!')
+#         break
+
+
+
+
