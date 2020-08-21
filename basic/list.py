@@ -36,3 +36,10 @@ list4 = thelist + list2  # join two list and make another list
 #     print('One is in the list')
 # else:
 #     print("not in it.")
+
+print(list('abcdef'))
+
+mylist = [1, 2, 3, 4, 5]
+mylist1 = ['a', 'b', 'c', 'd', 'e']
+
+print(list(zip(mylist, mylist1)))
