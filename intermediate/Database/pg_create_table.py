@@ -1,7 +1,7 @@
 from psycopg2 import connect
 
 # add database with python code
-conn = psycopg2.connect("dbname=office user=postgres password=123456")
+conn = connect("dbname=office user=postgres password=123456")
 
 cur = conn.cursor()
 

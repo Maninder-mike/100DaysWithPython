@@ -12,6 +12,8 @@ class Point:
         y = self.y + other.y
         return Point(x, y)
 
+    # TODO work on it.
+
     def __sub__(self, other):
         pass
 
