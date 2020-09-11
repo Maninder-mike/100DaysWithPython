@@ -5,7 +5,7 @@ conn = connect("test.db")
 cur = conn.cursor()
 
 cur.execute(
-    """CREATE TABLE IF NOT EXISTS master(
+		"""CREATE TABLE IF NOT EXISTS master(
 		m_id INT NOT NULL,
 		name TEXT NOT NULL, 
 		inserted_date DATE DEFAULT CURRENT_DATE, 
@@ -13,7 +13,7 @@ cur.execute(
 )
 
 cur.execute(
-    """CREATE TABLE IF NOT EXISTS slave(
+		"""CREATE TABLE IF NOT EXISTS slave(
 		s_id INT NOT NULL,
 		m_id INT NOT NULL,
 		name TEXT NOT NULL, 
@@ -23,7 +23,7 @@ cur.execute(
 )
 
 cur.execute(
-    """CREATE TABLE IF NOT EXISTS butler(
+		"""CREATE TABLE IF NOT EXISTS butler(
 		b_id INT NOT NULL,
 		m_id INT NOT NULL,
 		s_id INT NOT NULL,
@@ -35,7 +35,7 @@ cur.execute(
 )
 
 cur.execute(
-    "INSERT INTO butler(b_id ,m_id, s_id,name) VALUES (96, 3, 52, 'bulter_one')")
+	"INSERT INTO butler(b_id ,m_id, s_id,name) VALUES (96, 3, 52, 'bulter_one')")
 
 # SELECT
 # SELECT * FROM butler;

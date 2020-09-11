@@ -1,5 +1,4 @@
 from timeit import timeit
-from pprint import pprint
 from random import randrange
 
 

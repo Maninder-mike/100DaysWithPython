@@ -9,7 +9,7 @@ cur.execute('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"')
 
 # create a table, if table exists than this line skips
 cur.execute(
-    """CREATE TABLE IF NOT EXISTS head_office(
+	"""CREATE TABLE IF NOT EXISTS head_office(
 	name TEXT NOT NULL UNIQUE,
 	employees smallint NOT NULL,
 	ho_id uuid NOT NULL DEFAULT uuid_generate_v4(),
@@ -19,7 +19,7 @@ cur.execute(
 )
 
 cur.execute(
-    """CREATE TABLE IF NOT EXISTS sub_office(
+	"""CREATE TABLE IF NOT EXISTS sub_office(
 	name TEXT NOT NULL UNIQUE,
 	employees smallint NOT NULL,
 	head_office uuid,

@@ -17,7 +17,7 @@ cur = conn.cursor()
 # )
 
 cur.execute(
-    """INSERT INTO sub_office(name, employees) VALUES
+	"""INSERT INTO sub_office(name, employees) VALUES
 	('patran', 5),
 	('calgary', 21),
 	('adminton', 15),
